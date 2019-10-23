@@ -1,4 +1,4 @@
-package chat;
+﻿package cn.chart;
 
 import java.io.BufferedReader;
 import java.io.FileInputStream;
@@ -15,8 +15,6 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 import java.util.Scanner;
-
-import PrintChat.Server;
 
 public class Sever {
 	
@@ -155,12 +153,8 @@ public class Sever {
 				 * */
 				
 				String str = null;
-				//String c = null;
-				//Scanner sc = new Scanner(System.in);
 				while((str = br.readLine()) != null){
-					/*System.out.println("客户端说:"+str);
-					c = sc.nextLine();
-					p.println("服务端说"+c);*/
+					System.out.println("服务端收到:===>>"+str);
 					/*
 					 * 遍历所有allOut集合,将消息发送给
 					 * 所有客户端
